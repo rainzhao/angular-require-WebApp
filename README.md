@@ -1,3 +1,3 @@
-# requirejs-angularjs
+# angularjs配合requirejs
 
 ###更新中...
