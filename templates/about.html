@@ -1,0 +1,146 @@
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body,html{
+			width: 100%;
+			height: 100%;
+		}
+		/*公共样式*/
+		.clearfix:after{
+			content: '.';
+			height: 0;
+			overflow: hidden;
+			clear: both;
+			visibility: hidden;
+			display: block;
+		}
+		/*头部header*/
+		@font-face {font-family: 'iconfont';
+		    src: url('img/iconabout/iconfont.eot'); /* IE9*/
+		    src: url('img/iconabout/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		    url('img/iconabout/iconfont.woff') format('woff'), /* chrome、firefox */
+		    url('img/iconabout/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		    url('img/iconabout/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		@font-face {font-family: 'more';
+		    src: url('img/icon/iconfont.eot'); /* IE9*/
+		    src: url('img/icon/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		    url('img/icon/iconfont.woff') format('woff'), /* chrome、firefox */
+		    url('img/icon/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		    url('img/icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		.iconfontMore{
+		    font-family:"iconfont" !important;
+		    font-size:30px;font-style:normal;
+		    -webkit-font-smoothing: antialiased;
+		    -webkit-text-stroke-width: 0.2px;
+		    -moz-osx-font-smoothing: grayscale;
+		    color: #fff;
+		    margin-left: 10px;
+		}
+		.iconfont{
+		    font-family:"iconfont" !important;
+		    font-size:30px;font-style:normal;
+		    -webkit-font-smoothing: antialiased;
+		    -webkit-text-stroke-width: 0.2px;
+		    -moz-osx-font-smoothing: grayscale;
+		    color: #959595;
+
+		}
+		.header{
+			width: 100%;
+			height: 50px;
+			background-color: #3993cf;
+			float: left;
+		}
+		.header a{
+			float: left;
+			height: 50px;
+			line-height: 45px;
+			text-decoration: none;
+		}
+		.header h1{
+			float: left;
+			margin-left: 4px;
+			font-weight: normal;
+			font-size: 18px;
+			height: 12px;
+			line-height: 12px;
+			color: #fff;
+			font-family: "微软雅黑";
+		}
+		.header span{
+			background: url("img/logo.png");
+			width: 32px;
+			height: 32px;
+			display: inline-block;
+			float: left;
+			margin-top: 9px;
+			margin-left: 6px;
+		}
+		.header a{
+			display: inline-block;
+			width: 45px;
+			height: 50px;
+		}
+		
+		/*content界面*/
+		.content{
+			background-color: #eee;
+			padding-top: 60px;
+			padding-bottom: 30px;
+			height: 800px;
+		}
+		.content ul{
+			width: 90%;
+			margin: 0 auto;
+			list-style: none;
+		}
+		.content ul a{
+			text-decoration: none;
+			color: #000;
+			display: block;
+			height: 50px;
+			background-color: #fff;
+			margin-top: 20px;
+			line-height: 50px;
+			padding-left: 10px;
+			border: 1px solid #e0e0e0;
+		}
+		.content ul a span,.content ul i{
+			line-height: 50px;
+			height: 50px;
+			display: block;
+			float: left;	
+		}
+		.content ul a span{
+			margin-left: 10px;
+		}
+		.content .version{
+			float: right;
+			margin-right: 30px;
+			font-family: "微软雅黑";
+			font-size: 16px;
+		}
+	</style>
+
+<!-- 头部 -->
+	<div class="header clearfix">
+		<a href="#"><i class="iconfontMore">&#xe6ff;</i></a><!-- 更多 -->
+		<span></span><!-- logo -->
+		<h1>关于我们</h1>
+	</div>
+	<!-- messages -->
+	<div class="content">
+		<ul>
+			<li><a href=""><i class="iconfont">&#xe602;</i><span>检测更新</span><span class="version">v4.2.2</span></a></li>
+			<li><a href=""><i class="iconfont">&#xe60c;</i><span>提建议</span></a></li>
+			<li><a href=""><i class="iconfont">&#xe654;</i><span>分享给朋友</span></a></li>
+			<li><a href=""><i class="iconfont">&#xe694;</i><span>欢迎页</span></a></li>
+			<li><a href=""><i class="iconfont">&#xe6d0;</i><span>使用条款和协议</span></a></li>
+			<li><a href=""><i class="iconfont">&#xe604;</i><span>客服电话:40000-557117</span></a></li>
+		</ul>
+	</div>

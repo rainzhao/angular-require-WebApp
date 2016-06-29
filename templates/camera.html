@@ -1,0 +1,167 @@
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body,html{
+			width: 100%;
+			height: 100%;
+		}
+		/*公共样式*/
+		.clearfix:after{
+			content: '.';
+			height: 0;
+			overflow: hidden;
+			clear: both;
+			visibility: hidden;
+			display: block;
+		}
+		/*头部header*/
+		@font-face {font-family: 'iconfont';
+		    src: url('img/iconabout/iconfont.eot'); /* IE9*/
+		    src: url('img/iconabout/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		    url('img/iconabout/iconfont.woff') format('woff'), /* chrome、firefox */
+		    url('img/iconabout/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		    url('img/iconabout/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		@font-face {font-family: 'more';
+		    src: url('img/icon/iconfont.eot'); /* IE9*/
+		    src: url('img/icon/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		    url('img/icon/iconfont.woff') format('woff'), /* chrome、firefox */
+		    url('img/icon/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		    url('img/icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		.iconfontMore{
+		    font-family:"iconfont" !important;
+		    font-size:30px;font-style:normal;
+		    -webkit-font-smoothing: antialiased;
+		    -webkit-text-stroke-width: 0.2px;
+		    -moz-osx-font-smoothing: grayscale;
+		    color: #fff;
+		    margin-left: 0px;
+		}
+		.header{
+			width: 100%;
+			height: 50px;
+			background-color: #3993cf;
+			float: left;
+		}
+		.header a{
+			float: left;
+			height: 50px;
+			line-height: 45px;
+			text-decoration: none;
+			color: #fff;
+			font-family: "微软雅黑";
+			font-size: 16px;
+			margin-left: 10px;
+		}
+		.header h1{
+			float: left;
+			margin-left: 4px;
+			font-weight: normal;
+			font-size: 18px;
+			height: 50px;
+			line-height: 50px;
+			color: #fff;
+			font-family: "微软雅黑";
+		}
+		.header span{
+			background: url("img/logo.png");
+			width: 32px;
+			height: 32px;
+			display: inline-block;
+			float: left;
+			margin-top: 9px;
+			margin-left: 6px;
+		}
+		/*主体部分表头*/
+		.content{
+			padding-top: 50px;
+			background-color: #f2f2f2;
+			height: 800px;
+		}
+		.infos{
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.infos .date{
+			height: 46px;
+			width: 46px;
+			text-align: center;
+			border-right: 1px solid #e0e0e0;
+			float: left;
+		}
+		.infos .date span{
+			display: block;		
+			font-size: 18px;
+			font-family: "微软雅黑";
+			font-weight: bold;
+		}
+		.infos .titles{
+			font-size: 22px;
+			font-family: "微软雅黑";
+			height: 46px;
+			width: 46px;
+			float: left;
+			line-height: 46px;
+			margin-left: 10px;
+		}
+		.imageInfo .tips{
+			margin: 10px 0 10px 10px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			font-weight: 400;
+		}
+		.star{
+			margin-left: 10px;
+			outline: none;
+			cursor: pointer;
+		}
+		.star span:first-child{
+			outline: inherit;
+			color: #f5b906;
+			font-size: 18px;
+		}
+		.describe{
+			width: 160px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			clear: left;
+			white-space: nowrap;
+			font-size: 16px;
+			font-family: "微软雅黑";
+			margin-left: 10px;
+		}
+	</style>
+
+
+	<!-- 头部 -->
+	<div class="header clearfix">
+		<a href="#" class="more"><i class="iconfontMore">&#xe6ff;</i></a><!-- 更多 -->
+		<span></span><!-- logo -->
+		<a href="#" class="posi">美食相机</a>
+	</div>
+	<div class="content">
+		<div class="infos clearfix">
+			<div class="date"><span>02</span><span>APR</span></div>
+			<div class="titles"><span>午餐</span></div>
+		</div>
+		<div class="imageInfo">
+			<div class="image">
+				<img src="img/camera1.png" alt="">
+			</div>
+			<div class="tips">了解美食相机</div>
+			<div class="star"><uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating>
+				<span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span></div>
+			<div class="describe">美食相机记录你的吃货生涯</div>
+		</div>
+
+
+
+
+	</div>
+
+
+
